@@ -1,0 +1,21 @@
+--extra-index-url https://download.pytorch.org/whl/cu118
+
+numpy==1.26.4
+gradio==4.44.0
+fastapi<0.113.0
+opencv-python==4.9.0.80
+onnx==1.16.0
+insightface==0.7.3
+albucore==0.0.16
+psutil==5.9.6
+torch==2.1.2+cu118; sys_platform != 'darwin'
+torch==2.1.2; sys_platform == 'darwin'
+torchvision==0.16.2+cu118; sys_platform != 'darwin'
+torchvision==0.16.2; sys_platform == 'darwin'
+onnxruntime==1.17.1; sys_platform == 'darwin' and platform_machine != 'arm64'
+onnxruntime-silicon==1.16.3; sys_platform == 'darwin' and platform_machine == 'arm64'
+onnxruntime-gpu==1.17.1; sys_platform != 'darwin'
+tqdm==4.66.4
+ftfy
+regex
+pyvirtualcam
